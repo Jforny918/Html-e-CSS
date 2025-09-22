@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+* {
+    margin: 0; /*remove a margem padrão dos elementos*/
+    padding: 0; /*remove o padding padrão dos elementos*/
+    box-sizing: border-box; /*inclui o padding e a borda na largura e altura totais do elemento*/
+}
+
+img {
+    width: 350px; /*largura da imagem*/
+    height: auto; /*altura automática, para manter a proporção da imagem*/
+    border-radius: 10%; /*borda arredondada, deixando a imagem circular*/
+    margin: 0px; /*margem em todos os lados*/
+}
+body {
+    height: 100vh; /*para usarmos 100% da altura da página */
+    box-sizing: border-box; /*o elemento filho se encolhe e se adequa
+    ao elemento pai, evitando que o conteúdo transborde */
+    margin: 0;
+    background-color: rgb(26, 9, 54);
+    color: rgb(255, 235, 247);
+    font-family: Arial, sans-serif;
+}
+
+.titulo-destaque {
+    color:rgb(136, 28, 250);
+}
+.apresentacao {
+    display: flex; /*para que o conteúdo fique alinhado em linha*/
+    align-items: center;/*alinhamento vertical do conteúdo*/
+    margin: 5% 10%;
+    justify-content: space-between;
+    gap: 2rem; /*espaçamento entre os elementos*/
+
+}
+
+.apresentacao__conteudo {
+    width: 600px;  
+    display: flex; /*para que o conteúdo fique alinhado em coluna*/
+    flex-direction: column; /*alinhamento em coluna*/; 
+    gap: 40px; /*espaçamento entre os elementos*/ 
+    text-align: center; /*alinhamento do texto ao centro*/
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 28px; /*tamanho da fonte do título*/
+    line-height: 1.3; /*espaçamento entre linhas*/
+    font-family: "Krona One", sans-serif;
+    
+}
+.apresentacao__conteudo__texto {
+    font-size: 18px; /*tamanho da fonte do texto*/
+    line-height: 1.4; /*espaçamento entre linhas*/
+    font-family: "Montserrat", sans-serif;
+}
+.apresentacao__conteudo__contatos{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.apresentacao_links {
+    background-color: rgb(221, 206, 206);
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(35, 21, 58);
+    display: flex;              /* ícone e texto lado a lado */
+    align-items: center;       /* centraliza verticalmente */
+    justify-content: center;    /* centraliza horizontalmente */
+    gap: 8px;                   /* espaço entre ícone e texto */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.apresentacao_links:hover {
+    background-color: rgb(123, 10, 245); /* muda cor no hover */
+    color: #fff;
+    transform: scale(1.05); /* leve zoom */
+}
+
+.apresentacao_links i {
+    font-size: 18px; /* tamanho do ícone */
+}
+.redes {
+    display: flex;
+    gap: 15px;            /* espaço entre os botões */
+    justify-content: center; /* centraliza no meio */
+    flex-wrap: wrap;      /* se a tela for pequena, quebra para baixo */
+}
+
+nav { 
+    height: 80px;
+    width: 100%;
+    background-color: rgb(21, 1, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5%
+}
+.itens a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: color 0.3s;
+
+}
+
+
